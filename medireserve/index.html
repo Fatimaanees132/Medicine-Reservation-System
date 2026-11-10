@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | MediReserve</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100" style="--bs-primary-rgb:20,89,90;--bs-warning-rgb:255,107,53;background:#eef3f1">
+
+    <nav class="navbar navbar-expand-lg bg-white bg-opacity-50 py-3">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2 text-primary" href="index.html">
+                <i class="bi bi-heart-pulse-fill fs-1"></i>
+                <span class="lh-1">
+                    <span class="fw-bold fs-5 d-block" style="font-family:Georgia,serif">MediReserve</span>
+                    <small class="fs-6 text-primary" style="font-size:.65rem!important">Find · Compare · Reserve</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link text-dark active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="index.html#how">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn bg-white border border-warning rounded-pill px-4">Login</a>
+                    <a href="signup.html" class="btn bg-warning text-white rounded-pill px-4">Sign Up</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container flex-grow-1 pb-4">
+
+        <!-- HERO -->
+        <section class="row align-items-center py-4">
+
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-primary" style="font-family:Georgia,serif">
+                    Medicine<br>Reservation System
+                </h1>
+
+                <p class="fs-5 my-3">
+                    Find nearby pharmacies, compare prices, and reserve your medicines with ease.
+                </p>
+
+                <form class="d-flex align-items-center bg-white rounded-pill shadow p-2 ps-4"
+                      style="max-width:520px"
+                      onsubmit="return false">
+
+                    <input class="form-control border-0 shadow-none bg-transparent"
+                           placeholder="Search for medicine..."
+                           aria-label="Search for medicine">
+
+                    <button class="btn bg-warning text-white rounded-circle px-3" aria-label="Search">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <img class="img-fluid" style="max-height:340px" src="images/hero-medicines.png" alt="Capsules spilling from a jar">
+            </div>
+
+        </section>
+
+        <!-- FEATURES -->
+        <section class="row g-3 my-2">
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-3 d-flex align-items-center gap-3 fw-semibold">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-2 fs-5">
+                        <i class="bi bi-search-heart"></i>
+                    </span>
+                    Search Medicines
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-3 d-flex align-items-center gap-3 fw-semibold">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-2 fs-5">
+                        <i class="bi bi-currency-exchange"></i>
+                    </span>
+                    Compare Prices
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-3 d-flex align-items-center gap-3 fw-semibold">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-2 fs-5">
+                        <i class="bi bi-check-lg"></i>
+                    </span>
+                    Check Availability
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-3 d-flex align-items-center gap-3 fw-semibold">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-2 fs-5">
+                        <i class="bi bi-calendar-check"></i>
+                    </span>
+                    Reserve Instantly
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ROLE CARDS -->
+        <section class="row g-3 mt-1" id="how">
+
+            <div class="col-lg-6">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 d-flex align-items-center gap-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-4 fs-2">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
+
+                    <div>
+                        <h3 class="h5 fw-bold text-primary">Are you a Customer?</h3>
+                        <p class="small mb-3">Search, compare and reserve medicines.</p>
+                        <a href="customer-home.html" class="btn btn-sm bg-primary text-white rounded-pill px-3">
+                            Go to Customer Portal <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <img class="ms-auto d-none d-md-block" width="130" src="images/customer-woman.png" alt="Customer using a phone">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="bg-white bg-opacity-75 rounded-4 shadow-sm p-4 d-flex align-items-center gap-3">
+                    <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary p-4 fs-2">
+                        <i class="bi bi-shop"></i>
+                    </span>
+
+                    <div>
+                        <h3 class="h5 fw-bold text-primary">Are you a Pharmacy?</h3>
+                        <p class="small mb-3">Manage your medicines and reservations.</p>
+                        <a href="pharmacy-home.html" class="btn btn-sm bg-primary text-white rounded-pill px-3">
+                            Go to Pharmacy Portal <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <img class="ms-auto d-none d-md-block" width="130" src="images/pharmacy-store.png" alt="Pharmacy storefront">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white mt-5 pt-5 pb-3">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4" id="about">
+                    <h5 class="fw-bold d-flex align-items-center gap-2">
+                        <i class="bi bi-heart-pulse-fill fs-3"></i>
+                        MediReserve
+                    </h5>
+                    <p class="text-white-50">
+                        MediReserve helps you find nearby pharmacies, compare medicine prices, check availability and reserve what you need before you leave home.
+                    </p>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light link-opacity-75" href="index.html">Home</a></li>
+                        <li><a class="link-light link-opacity-75" href="login.html">Login</a></li>
+                        <li><a class="link-light link-opacity-75" href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h6 class="fw-bold">Portals</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="link-light link-opacity-75" href="customer-home.html">Customer Portal</a></li>
+                        <li><a class="link-light link-opacity-75" href="pharmacy-home.html">Pharmacy Portal</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4" id="contact">
+                    <h6 class="fw-bold">Contact Us</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li><i class="bi bi-envelope me-2"></i>support@medireserve.com</li>
+                        <li><i class="bi bi-telephone me-2"></i>+92 300 0000000</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Lahore, Pakistan</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-light opacity-25 mt-4">
+            <p class="text-center text-white-50 small mb-0">© 2026 MediReserve. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
